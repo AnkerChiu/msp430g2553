@@ -1,6 +1,6 @@
 #include <msp430g2553.h>
 unsigned int frequency=20e3; 
-unsigned int Vc = 20; 
+unsigned int Vc = 20;
 unsigned int TA1CCR0_value;
 unsigned int TA1CCR1_value;
 unsigned int TA1CCR2_value;
