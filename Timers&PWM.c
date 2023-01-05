@@ -22,7 +22,7 @@ void main(void)
  P2SEL2 = ~BIT1; 
 
  //set up mode
- TA1CCR0= Period; //週期
+ TA1CCR0= Period;
  //set duty cycle
  TA1CCR1=Period/100*duty;
  //set output mode-->toggle/set
