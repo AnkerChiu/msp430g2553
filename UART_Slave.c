@@ -51,4 +51,3 @@ __interrupt void USCI0RX_ISR(void)
  Tx -= 1;
  if(Tx<=-1) Tx=9;
 }
-//*****************no more****************************
