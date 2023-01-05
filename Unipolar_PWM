@@ -1,6 +1,6 @@
 #include <msp430g2553.h>
-unsigned int frequency=20e3; //單位Hz
-unsigned int Vc = 20; //單位%
+unsigned int frequency=20e3; 
+unsigned int Vc = 20; 
 unsigned int TA1CCR0_value;
 unsigned int TA1CCR1_value;
 unsigned int TA1CCR2_value;
@@ -24,7 +24,7 @@ void main(void)
  //Set the period in the Timer (up/down counter)
  TA1CCR0_value = 16e6/frequency/2; //16M/20k/2=400
  TA1CCR0=TA1CCR0_value;
- 
+
  //+Vc
  TA1CCR1_value=TA1CCR0_value/2+(TA1CCR0_value*Vc/200);
  TA1CCR1=TA1CCR1_value;

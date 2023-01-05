@@ -9,7 +9,7 @@ unsigned int duty =80;
 void main(void)
 {
  //stop watchdog
- WDTCTL = WDTPW | WDTHOLD; ㄞ
+ WDTCTL = WDTPW | WDTHOLD; 
  
  //set SMCLK=16MHz
  DCOCTL = 0;
@@ -18,6 +18,7 @@ void main(void)
 
  //set I/O
  P2DIR |= BIT1;
+ // P2.1=compare Out1 output, P2.4=compare Out2 output
  P2SEL = BIT1; 
  P2SEL2 = ~BIT1; 
 

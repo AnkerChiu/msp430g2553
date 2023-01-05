@@ -19,8 +19,8 @@ void main(void)
  //set I/O
  P2DIR |= (BIT1+BIT4);
  // P2.1=compare Out1 output
- P2SEL = (BIT1+BIT4); //設為1
- P2SEL2 = ~(BIT1+BIT4); //設為0
+ P2SEL = (BIT1+BIT4); 
+ P2SEL2 = ~(BIT1+BIT4); 
 
  //Set the period in the Timer A0 (up/down counter)
  TA1CCR0_value = 16e6/frequency/2; 
