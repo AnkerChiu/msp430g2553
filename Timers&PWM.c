@@ -9,7 +9,7 @@ unsigned int duty =80;
 void main(void)
 {
  //stop watchdog
- WDTCTL = WDTPW | WDTHOLD; 
+ WDTCTL = WDTPW | WDTHOLD; ㄞ
  
  //set SMCLK=16MHz
  DCOCTL = 0;
